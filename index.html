@@ -1,25 +1,25 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Javier León — Proyectos de software, marketing digital e IA</title>
-    <meta name="description" content="Gestión y desarrollo de proyectos de software, marketing digital y automatización con inteligencia artificial. Soluciones escalables para optimizar procesos, mejorar la experiencia del cliente y potenciar la presencia digital." />
+    <title data-i18n-meta="title">Javier León — Software, Marketing and AI</title>
+    <meta name="description" data-i18n-meta="description" content="Software project management and development, digital marketing, and AI automation. Scalable solutions to optimize processes, improve customer experience, and boost digital presence." />
     <link rel="canonical" href="https://javierleon.dev/" />
 
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="manifest.webmanifest" />
     <meta name="theme-color" content="#0ea5e9" />
 
-    <meta property="og:title" content="Javier León — Tecnología, Marketing e IA" />
-    <meta property="og:description" content="Gestión y desarrollo de proyectos de software, marketing digital y automatización con inteligencia artificial." />
+    <meta property="og:title" data-i18n-meta="ogTitle" content="Javier León — Technology, Marketing and AI" />
+    <meta property="og:description" data-i18n-meta="ogDescription" content="Software project management and development, digital marketing, and AI automation." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://javierleon.dev/" />
     <meta property="og:image" content="assets/img/og-image.svg" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Javier León — Tecnología, Marketing e IA" />
-    <meta name="twitter:description" content="Soluciones que optimizan procesos, mejoran la experiencia del cliente y potencian la presencia digital." />
+    <meta name="twitter:title" data-i18n-meta="twitterTitle" content="Javier León — Technology, Marketing and AI" />
+    <meta name="twitter:description" data-i18n-meta="twitterDescription" content="Solutions that optimize processes, enhance customer experience, and boost digital presence." />
     <meta name="twitter:image" content="assets/img/og-image.svg" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
@@ -27,17 +27,22 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <a class="brand" href="#inicio" data-i18n-attr="aria-label" data-i18n-key="header.homeAria" aria-label="Go to home">
           <span class="brand-mark" aria-hidden="true">JL</span>
           <span class="brand-text">Javier León</span>
         </a>
-        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false">Menú</button>
+        <button class="nav-toggle" aria-controls="site-nav" aria-expanded="false" data-i18n="nav.menu">Menu</button>
         <nav id="site-nav" class="site-nav" aria-label="Principal">
-          <a href="#servicios">Servicios</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#enfoque">Enfoque</a>
-          <a href="#contacto" class="btn btn-primary">Hablemos</a>
+          <a href="#servicios" data-i18n="nav.services">Services</a>
+          <a href="#proyectos" data-i18n="nav.projects">Projects</a>
+          <a href="#enfoque" data-i18n="nav.approach">Approach</a>
+          <a href="#contacto" class="btn btn-primary" data-i18n="nav.cta">Let's talk</a>
         </nav>
+        <label class="lang-select" for="lang-select" data-i18n="nav.languageLabel">Language</label>
+        <select id="lang-select" class="lang-select" aria-label="Language">
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+        </select>
       </div>
     </header>
 
@@ -45,20 +50,18 @@
       <section class="hero">
         <div class="container hero-inner">
           <div class="hero-copy">
-            <h1>Construyo soluciones digitales con software, marketing e IA</h1>
-            <p class="lead">
-              Me especializo en la gestión y desarrollo de proyectos de software, marketing digital y automatización con inteligencia artificial. Trabajo con empresas de distintos tamaños y sectores, brindando soluciones que optimizan procesos, mejoran la experiencia del cliente y potencian su presencia digital.
-            </p>
+            <h1 data-i18n="hero.title">I build digital solutions with software, marketing and AI</h1>
+            <p class="lead" data-i18n="hero.lead">I specialize in software project management and development, digital marketing and AI-driven automation. I help companies of all sizes optimize processes, improve customer experience and strengthen their digital presence.</p>
             <div class="actions">
-              <a href="#contacto" class="btn btn-primary">Reserva una llamada</a>
-              <a href="#servicios" class="btn">Ver servicios</a>
+              <a href="#contacto" class="btn btn-primary" data-i18n="hero.ctaPrimary">Book a call</a>
+              <a href="#servicios" class="btn" data-i18n="hero.ctaSecondary">See services</a>
             </div>
             <ul class="badges">
-              <li>Apps personalizadas</li>
-              <li>Integraciones</li>
-              <li>Automatización e IA</li>
-              <li>SEO/SEM</li>
-              <li>Cloud</li>
+              <li data-i18n="badges.apps">Custom apps</li>
+              <li data-i18n="badges.integrations">Integrations</li>
+              <li data-i18n="badges.ai">Automation & AI</li>
+              <li data-i18n="badges.seo">SEO/SEM</li>
+              <li data-i18n="badges.cloud">Cloud</li>
             </ul>
           </div>
         </div>
@@ -66,63 +69,61 @@
 
       <section id="servicios" class="section">
         <div class="container">
-          <h2>Servicios</h2>
-          <p class="section-intro">
-            Soluciones de punta a punta: desde estrategia hasta implementación y mejora continua.
-          </p>
+          <h2 data-i18n="services.title">Services</h2>
+          <p class="section-intro" data-i18n="services.intro">End-to-end solutions: from strategy to implementation and continuous improvement.</p>
           <div class="cards">
             <article class="card">
-              <h3>Desarrollo de aplicaciones</h3>
-              <p>Aplicaciones web y backend a medida, enfocadas en rendimiento, seguridad y escalabilidad.</p>
+              <h3 data-i18n="cards.dev.title">Application development</h3>
+              <p data-i18n="cards.dev.p">Custom web apps and backends focused on performance, security and scalability.</p>
               <ul>
-                <li>Arquitectura y roadmaps</li>
-                <li>APIs y microservicios</li>
-                <li>Paneles y herramientas internas</li>
+                <li data-i18n="cards.dev.items.architecture">Architecture and roadmaps</li>
+                <li data-i18n="cards.dev.items.apis">APIs and microservices</li>
+                <li data-i18n="cards.dev.items.dashboards">Dashboards and internal tools</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Integración de plataformas</h3>
-              <p>Conecta tus sistemas para eliminar silos y automatizar flujos críticos.</p>
+              <h3 data-i18n="cards.integrations.title">Platform integration</h3>
+              <p data-i18n="cards.integrations.p">Connect your systems to eliminate silos and automate critical flows.</p>
               <ul>
-                <li>CRM/ERP/E-commerce</li>
-                <li>ETL/ELT y data pipelines</li>
-                <li>Automatización operativa</li>
+                <li data-i18n="cards.integrations.items.crm">CRM/ERP/E‑commerce</li>
+                <li data-i18n="cards.integrations.items.pipelines">ETL/ELT and data pipelines</li>
+                <li data-i18n="cards.integrations.items.automation">Operational automation</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Automatización con IA</h3>
-              <p>Asistentes inteligentes y agentes que mejoran productividad y experiencia del cliente.</p>
+              <h3 data-i18n="cards.ai.title">AI automation</h3>
+              <p data-i18n="cards.ai.p">Intelligent assistants and agents that improve productivity and customer experience.</p>
               <ul>
-                <li>Chatbots y RAG</li>
-                <li>Procesamiento de documentos</li>
-                <li>Orquestación de agentes</li>
+                <li data-i18n="cards.ai.items.chatbots">Chatbots and RAG</li>
+                <li data-i18n="cards.ai.items.docs">Document processing</li>
+                <li data-i18n="cards.ai.items.agents">Agent orchestration</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Contenido con IA</h3>
-              <p>Generación de contenido para marketing y comunicación, con supervisión humana.</p>
+              <h3 data-i18n="cards.content.title">AI content</h3>
+              <p data-i18n="cards.content.p">AI‑assisted content for marketing and communications with human oversight.</p>
               <ul>
-                <li>Blogs, emails y ads</li>
-                <li>Guías y whitepapers</li>
-                <li>Repurposing multiformato</li>
+                <li data-i18n="cards.content.items.blogs">Blogs, emails and ads</li>
+                <li data-i18n="cards.content.items.guides">Guides and whitepapers</li>
+                <li data-i18n="cards.content.items.repurpose">Multiformat repurposing</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Infraestructura Cloud</h3>
-              <p>AWS, Azure y Google Cloud: diseño, despliegue y observabilidad.</p>
+              <h3 data-i18n="cards.cloud.title">Cloud infrastructure</h3>
+              <p data-i18n="cards.cloud.p">AWS, Azure and Google Cloud: design, deployment and observability.</p>
               <ul>
-                <li>IaC y CI/CD</li>
-                <li>Seguridad y compliance</li>
-                <li>Optimización de costos</li>
+                <li data-i18n="cards.cloud.items.iac">IaC and CI/CD</li>
+                <li data-i18n="cards.cloud.items.security">Security and compliance</li>
+                <li data-i18n="cards.cloud.items.cost">Cost optimization</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Marketing Digital</h3>
-              <p>Posicionamiento y adquisición con foco en ROI.</p>
+              <h3 data-i18n="cards.marketing.title">Digital marketing</h3>
+              <p data-i18n="cards.marketing.p">Positioning and acquisition focused on ROI.</p>
               <ul>
-                <li>SEO técnico y de contenidos</li>
-                <li>SEM y paid social</li>
-                <li>Analítica y atribución</li>
+                <li data-i18n="cards.marketing.items.seo">Technical and content SEO</li>
+                <li data-i18n="cards.marketing.items.sem">SEM and paid social</li>
+                <li data-i18n="cards.marketing.items.analytics">Analytics and attribution</li>
               </ul>
             </article>
           </div>
@@ -131,19 +132,19 @@
 
       <section id="proyectos" class="section alt">
         <div class="container">
-          <h2>Proyectos recientes</h2>
+          <h2 data-i18n="projects.title">Recent projects</h2>
           <div class="projects">
             <article class="project">
-              <h3>Automatización de soporte con IA</h3>
-              <p>Implementación de un asistente de conocimiento (RAG) que redujo 42% los tiempos de respuesta y mejoró 18% la satisfacción NPS.</p>
+              <h3 data-i18n="projects.items.support.title">AI‑powered support automation</h3>
+              <p data-i18n="projects.items.support.p">Knowledge assistant (RAG) that cut response times by 42% and improved NPS by 18%.</p>
             </article>
             <article class="project">
-              <h3>Integración CRM + e‑commerce</h3>
-              <p>Pipeline de datos y segmentación avanzada que aumentó 2.3× la tasa de conversión de campañas.</p>
+              <h3 data-i18n="projects.items.crm.title">CRM + e‑commerce integration</h3>
+              <p data-i18n="projects.items.crm.p">Data pipelines and advanced segmentation increased campaign conversion rate by 2.3×.</p>
             </article>
             <article class="project">
-              <h3>Aplicación interna para operaciones</h3>
-              <p>Panel de control para procesos logísticos que disminuyó 35% errores y 28% tiempos de ciclo.</p>
+              <h3 data-i18n="projects.items.ops.title">Internal operations app</h3>
+              <p data-i18n="projects.items.ops.p">Operations control panel reduced errors by 35% and cycle time by 28%.</p>
             </article>
           </div>
         </div>
@@ -151,23 +152,23 @@
 
       <section id="enfoque" class="section">
         <div class="container">
-          <h2>Enfoque de trabajo</h2>
+          <h2 data-i18n="approach.title">Approach</h2>
           <ol class="process">
             <li>
-              <strong>Descubrimiento</strong>
-              <span>Objetivos, métricas y casos de uso prioritarios.</span>
+              <strong data-i18n="approach.steps.discovery.title">Discovery</strong>
+              <span data-i18n="approach.steps.discovery.p">Objectives, metrics and priority use cases.</span>
             </li>
             <li>
-              <strong>Diseño de solución</strong>
-              <span>Arquitectura, alcance y plan iterativo.</span>
+              <strong data-i18n="approach.steps.design.title">Solution design</strong>
+              <span data-i18n="approach.steps.design.p">Architecture, scope and iterative plan.</span>
             </li>
             <li>
-              <strong>Implementación</strong>
-              <span>Entregas frecuentes, calidad y seguridad.</span>
+              <strong data-i18n="approach.steps.implementation.title">Implementation</strong>
+              <span data-i18n="approach.steps.implementation.p">Frequent releases, quality and security.</span>
             </li>
             <li>
-              <strong>Medición y mejora</strong>
-              <span>KPIs, experimentación y escalamiento.</span>
+              <strong data-i18n="approach.steps.measure.title">Measurement & improvement</strong>
+              <span data-i18n="approach.steps.measure.p">KPIs, experimentation and scaling.</span>
             </li>
           </ol>
         </div>
@@ -175,24 +176,24 @@
 
       <section id="contacto" class="section cta">
         <div class="container">
-          <h2>¿Listo para empezar?</h2>
-          <p>Cuéntame sobre tu proyecto o agenda una llamada. Respondo en 24h.</p>
+          <h2 data-i18n="contact.title">Ready to start?</h2>
+          <p data-i18n="contact.p">Tell me about your project or schedule a call. I answer within 24h.</p>
           <div class="actions">
-            <a class="btn btn-primary" href="mailto:contacto@javierleon.dev">contacto@javierleon.dev</a>
-            <a class="btn" href="#" aria-disabled="true">Agendar en Calendly</a>
+            <a class="btn btn-primary" href="mailto:contacto@javierleon.dev" data-i18n="contact.email">contacto@javierleon.dev</a>
+            <a class="btn" href="#" aria-disabled="true" data-i18n="contact.schedule">Schedule on Calendly</a>
           </div>
-          <p class="contact-notice">Nota: puedes cambiar el correo y enlace de agenda en el contenido.</p>
+          <p class="contact-notice" data-i18n="contact.note">Note: you can change the email and scheduling link in the content.</p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>© <span id="year"></span> Javier León. Todos los derechos reservados.</p>
+        <p>© <span id="year"></span> Javier León. <span data-i18n="footer.rights">All rights reserved.</span></p>
         <nav class="footer-nav" aria-label="Secundario">
-          <a href="#servicios">Servicios</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#servicios" data-i18n="nav.services">Services</a>
+          <a href="#proyectos" data-i18n="nav.projects">Projects</a>
+          <a href="#contacto" data-i18n="nav.contact">Contact</a>
         </nav>
       </div>
     </footer>

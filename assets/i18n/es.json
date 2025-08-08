@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Javier León — Proyectos de software, marketing digital e IA",
+    "description": "Gestión y desarrollo de proyectos de software, marketing digital y automatización con inteligencia artificial. Soluciones escalables para optimizar procesos, mejorar la experiencia del cliente y potenciar la presencia digital.",
+    "ogTitle": "Javier León — Tecnología, Marketing e IA",
+    "ogDescription": "Gestión y desarrollo de proyectos de software, marketing digital y automatización con inteligencia artificial.",
+    "twitterTitle": "Javier León — Tecnología, Marketing e IA",
+    "twitterDescription": "Soluciones que optimizan procesos, mejoran la experiencia del cliente y potencian la presencia digital."
+  },
+  "header": {
+    "homeAria": "Ir al inicio"
+  },
+  "nav": {
+    "menu": "Menú",
+    "services": "Servicios",
+    "projects": "Proyectos",
+    "approach": "Enfoque",
+    "contact": "Contacto",
+    "cta": "Hablemos",
+    "languageLabel": "Idioma"
+  },
+  "hero": {
+    "title": "Construyo soluciones digitales con software, marketing e IA",
+    "lead": "Me especializo en la gestión y desarrollo de proyectos de software, marketing digital y automatización con inteligencia artificial. Trabajo con empresas de distintos tamaños y sectores, brindando soluciones que optimizan procesos, mejoran la experiencia del cliente y potencian su presencia digital.",
+    "ctaPrimary": "Reserva una llamada",
+    "ctaSecondary": "Ver servicios"
+  },
+  "badges": {
+    "apps": "Apps personalizadas",
+    "integrations": "Integraciones",
+    "ai": "Automatización e IA",
+    "seo": "SEO/SEM",
+    "cloud": "Cloud"
+  },
+  "services": {
+    "title": "Servicios",
+    "intro": "Soluciones de punta a punta: desde estrategia hasta implementación y mejora continua."
+  },
+  "cards": {
+    "dev": {
+      "title": "Desarrollo de aplicaciones",
+      "p": "Aplicaciones web y backend a medida, enfocadas en rendimiento, seguridad y escalabilidad.",
+      "items": {
+        "architecture": "Arquitectura y roadmaps",
+        "apis": "APIs y microservicios",
+        "dashboards": "Paneles y herramientas internas"
+      }
+    },
+    "integrations": {
+      "title": "Integración de plataformas",
+      "p": "Conecta tus sistemas para eliminar silos y automatizar flujos críticos.",
+      "items": {
+        "crm": "CRM/ERP/E‑commerce",
+        "pipelines": "ETL/ELT y data pipelines",
+        "automation": "Automatización operativa"
+      }
+    },
+    "ai": {
+      "title": "Automatización con IA",
+      "p": "Asistentes inteligentes y agentes que mejoran productividad y experiencia del cliente.",
+      "items": {
+        "chatbots": "Chatbots y RAG",
+        "docs": "Procesamiento de documentos",
+        "agents": "Orquestación de agentes"
+      }
+    },
+    "content": {
+      "title": "Contenido con IA",
+      "p": "Generación de contenido para marketing y comunicación, con supervisión humana.",
+      "items": {
+        "blogs": "Blogs, emails y ads",
+        "guides": "Guías y whitepapers",
+        "repurpose": "Repurposing multiformato"
+      }
+    },
+    "cloud": {
+      "title": "Infraestructura Cloud",
+      "p": "AWS, Azure y Google Cloud: diseño, despliegue y observabilidad.",
+      "items": {
+        "iac": "IaC y CI/CD",
+        "security": "Seguridad y compliance",
+        "cost": "Optimización de costos"
+      }
+    },
+    "marketing": {
+      "title": "Marketing Digital",
+      "p": "Posicionamiento y adquisición con foco en ROI.",
+      "items": {
+        "seo": "SEO técnico y de contenidos",
+        "sem": "SEM y paid social",
+        "analytics": "Analítica y atribución"
+      }
+    }
+  },
+  "projects": {
+    "title": "Proyectos recientes",
+    "items": {
+      "support": {
+        "title": "Automatización de soporte con IA",
+        "p": "Asistente de conocimiento (RAG) que redujo 42% los tiempos de respuesta y mejoró 18% el NPS."
+      },
+      "crm": {
+        "title": "Integración CRM + e‑commerce",
+        "p": "Pipelines de datos y segmentación avanzada aumentaron 2.3× la conversión de campañas."
+      },
+      "ops": {
+        "title": "Aplicación interna para operaciones",
+        "p": "Panel de control que disminuyó 35% errores y 28% tiempos de ciclo."
+      }
+    }
+  },
+  "approach": {
+    "title": "Enfoque de trabajo",
+    "steps": {
+      "discovery": { "title": "Descubrimiento", "p": "Objetivos, métricas y casos de uso prioritarios." },
+      "design": { "title": "Diseño de solución", "p": "Arquitectura, alcance y plan iterativo." },
+      "implementation": { "title": "Implementación", "p": "Entregas frecuentes, calidad y seguridad." },
+      "measure": { "title": "Medición y mejora", "p": "KPIs, experimentación y escalamiento." }
+    }
+  },
+  "contact": {
+    "title": "¿Listo para empezar?",
+    "p": "Cuéntame sobre tu proyecto o agenda una llamada. Respondo en 24h.",
+    "email": "contacto@javierleon.dev",
+    "schedule": "Agendar en Calendly",
+    "note": "Nota: puedes cambiar el correo y enlace de agenda en el contenido."
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados."
+  }
+}
+
+

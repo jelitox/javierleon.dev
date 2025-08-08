@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Javier León — Software, Marketing and AI",
+    "description": "Software project management and development, digital marketing, and AI automation. Scalable solutions to optimize processes, improve customer experience, and boost digital presence.",
+    "ogTitle": "Javier León — Technology, Marketing and AI",
+    "ogDescription": "Software project management and development, digital marketing, and AI automation.",
+    "twitterTitle": "Javier León — Technology, Marketing and AI",
+    "twitterDescription": "Solutions that optimize processes, enhance customer experience, and boost digital presence."
+  },
+  "header": {
+    "homeAria": "Go to home"
+  },
+  "nav": {
+    "menu": "Menu",
+    "services": "Services",
+    "projects": "Projects",
+    "approach": "Approach",
+    "contact": "Contact",
+    "cta": "Let's talk",
+    "languageLabel": "Language"
+  },
+  "hero": {
+    "title": "I build digital solutions with software, marketing and AI",
+    "lead": "I specialize in software project management and development, digital marketing and AI-driven automation. I help companies of all sizes optimize processes, improve customer experience and strengthen their digital presence.",
+    "ctaPrimary": "Book a call",
+    "ctaSecondary": "See services"
+  },
+  "badges": {
+    "apps": "Custom apps",
+    "integrations": "Integrations",
+    "ai": "Automation & AI",
+    "seo": "SEO/SEM",
+    "cloud": "Cloud"
+  },
+  "services": {
+    "title": "Services",
+    "intro": "End-to-end solutions: from strategy to implementation and continuous improvement."
+  },
+  "cards": {
+    "dev": {
+      "title": "Application development",
+      "p": "Custom web apps and backends focused on performance, security and scalability.",
+      "items": {
+        "architecture": "Architecture and roadmaps",
+        "apis": "APIs and microservices",
+        "dashboards": "Dashboards and internal tools"
+      }
+    },
+    "integrations": {
+      "title": "Platform integration",
+      "p": "Connect your systems to eliminate silos and automate critical flows.",
+      "items": {
+        "crm": "CRM/ERP/E‑commerce",
+        "pipelines": "ETL/ELT and data pipelines",
+        "automation": "Operational automation"
+      }
+    },
+    "ai": {
+      "title": "AI automation",
+      "p": "Intelligent assistants and agents that improve productivity and customer experience.",
+      "items": {
+        "chatbots": "Chatbots and RAG",
+        "docs": "Document processing",
+        "agents": "Agent orchestration"
+      }
+    },
+    "content": {
+      "title": "AI content",
+      "p": "AI‑assisted content for marketing and communications with human oversight.",
+      "items": {
+        "blogs": "Blogs, emails and ads",
+        "guides": "Guides and whitepapers",
+        "repurpose": "Multiformat repurposing"
+      }
+    },
+    "cloud": {
+      "title": "Cloud infrastructure",
+      "p": "AWS, Azure and Google Cloud: design, deployment and observability.",
+      "items": {
+        "iac": "IaC and CI/CD",
+        "security": "Security and compliance",
+        "cost": "Cost optimization"
+      }
+    },
+    "marketing": {
+      "title": "Digital marketing",
+      "p": "Positioning and acquisition focused on ROI.",
+      "items": {
+        "seo": "Technical and content SEO",
+        "sem": "SEM and paid social",
+        "analytics": "Analytics and attribution"
+      }
+    }
+  },
+  "projects": {
+    "title": "Recent projects",
+    "items": {
+      "support": {
+        "title": "AI‑powered support automation",
+        "p": "Knowledge assistant (RAG) that cut response times by 42% and improved NPS by 18%."
+      },
+      "crm": {
+        "title": "CRM + e‑commerce integration",
+        "p": "Data pipelines and advanced segmentation increased campaign conversion rate by 2.3×."
+      },
+      "ops": {
+        "title": "Internal operations app",
+        "p": "Operations control panel reduced errors by 35% and cycle time by 28%."
+      }
+    }
+  },
+  "approach": {
+    "title": "Approach",
+    "steps": {
+      "discovery": { "title": "Discovery", "p": "Objectives, metrics and priority use cases." },
+      "design": { "title": "Solution design", "p": "Architecture, scope and iterative plan." },
+      "implementation": { "title": "Implementation", "p": "Frequent releases, quality and security." },
+      "measure": { "title": "Measurement & improvement", "p": "KPIs, experimentation and scaling." }
+    }
+  },
+  "contact": {
+    "title": "Ready to start?",
+    "p": "Tell me about your project or schedule a call. I answer within 24h.",
+    "email": "contacto@javierleon.dev",
+    "schedule": "Schedule on Calendly",
+    "note": "Note: you can change the email and scheduling link in the content."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}
+
+
