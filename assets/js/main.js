@@ -18,7 +18,7 @@ if (yearEl) {
 const DEFAULT_LANG = 'en';
 const SUPPORTED_LANGS = ['en', 'es'];
 
-function detectInitialLang() {
+function getStoredOrNavigatorLang() {
   const stored = localStorage.getItem('lang');
   if (stored && SUPPORTED_LANGS.includes(stored)) return stored;
   const fromHtml = document.documentElement.lang;
@@ -87,10 +87,59 @@ async function setLanguage(lang) {
   }
 }
 
+// Geo-based detection
+const SPANISH_COUNTRIES = new Set([
+  'AR','BO','CL','CO','CR','CU','DO','EC','SV','GQ','GT','HN','MX','NI','PA','PY','PE','PR','ES','UY','VE'
+]);
+
+function fetchWithTimeout(resource, options = {}) {
+  const { timeout = 1500, ...rest } = options;
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+  return fetch(resource, { ...rest, signal: controller.signal, referrerPolicy: 'no-referrer' })
+    .finally(() => clearTimeout(id));
+}
+
+async function guessLangByGeo() {
+  try {
+    // Try ipapi.co
+    const r1 = await fetchWithTimeout('https://ipapi.co/json/', { timeout: 1200 });
+    if (r1.ok) {
+      const j = await r1.json();
+      const cc = (j && j.country_code) ? String(j.country_code).toUpperCase() : '';
+      if (SPANISH_COUNTRIES.has(cc)) return 'es';
+      return 'en';
+    }
+  } catch (_) { /* noop */ }
+  try {
+    // Fallback ipwho.is
+    const r2 = await fetchWithTimeout('https://ipwho.is/', { timeout: 1200 });
+    if (r2.ok) {
+      const j = await r2.json();
+      const cc = (j && j.country_code) ? String(j.country_code).toUpperCase() : '';
+      if (SPANISH_COUNTRIES.has(cc)) return 'es';
+      return 'en';
+    }
+  } catch (_) { /* noop */ }
+  // Final fallback to navigator
+  return getStoredOrNavigatorLang();
+}
+
 // Init i18n
 (async () => {
-  const lang = detectInitialLang();
-  await setLanguage(lang);
+  const stored = localStorage.getItem('lang');
+  if (stored && SUPPORTED_LANGS.includes(stored)) {
+    await setLanguage(stored);
+    return;
+  }
+  // Default to EN immediately to avoid blank content
+  await setLanguage('en');
+  try {
+    const geoLang = await guessLangByGeo();
+    if (geoLang !== 'en') await setLanguage(geoLang);
+  } catch (e) {
+    // ignore, EN already set
+  }
 })();
 
 // Language switcher
